@@ -17,8 +17,9 @@ This setup demonstrates **network inversion**:
 
 It also provides a stable, interpretable alternative to adversarial GAN-style training.
 
+![1class-no_weights-ce-kld](https://github.com/user-attachments/assets/9cf07e4d-ba2d-4b4f-98d2-05c9e1c9df1c)
 
-![alt text](MNIST/1PerClass/1class-no_weights-ce-kld.gif)
+
 
 ---
 
