@@ -3,7 +3,7 @@
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 This project implements a **cooperative generative modelling framework** where:
 
@@ -19,14 +19,7 @@ It also provides a stable, interpretable alternative to adversarial GAN-style tr
 
 ---
 
-## 🧠 Key Idea
-
-Real Data ───► Classifier (trained normally)
-                   ▲
-                   │  feedback: CE, KL, hooks, perturbation losses
-                   │
-Noise + Label ─► Generator ───────────────────────────────────┘
-
+##  Key Idea
 
 
 - Classifier learns from real data.  
@@ -36,14 +29,14 @@ Noise + Label ─► Generator ────────────────�
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Build a cooperative framework to jointly train a generator and classifier using multiple loss functions.  
 - Demonstrate **network inversion** by generating training-like samples without directly using real images in the generator.
 
 ---
 
-## 🆕 New Ideas Proposed
+##  New Ideas Proposed
 
 - Introduced **SSIM-based dissimilarity loss** and **latent diversity loss** to improve semantic variation in generated samples.  
 - Reduced total training time by **up to 60%** using:
@@ -55,7 +48,7 @@ Noise + Label ─► Generator ────────────────�
 
 ---
 
-## 🧵 Training Approach
+##  Training Approach
 
 - Classifier trains on real images using Cross-Entropy.  
 - Generator receives:
@@ -74,7 +67,7 @@ The generator learns the underlying dataset distribution **only through classifi
 
 ---
 
-## 🔥 Challenges Faced
+##  Challenges Faced
 
 - **Mode collapse**: generator produced nearly identical samples for different noise vectors.  
 - **Training instability on larger datasets**: generator gradients interfered with classifier learning, reducing classifier accuracy.  
@@ -82,7 +75,7 @@ The generator learns the underlying dataset distribution **only through classifi
 
 ---
 
-## 🧩 Who Will Benefit from this Work?
+##  Who Will Benefit from this Work?
 
 - Researchers studying **network inversion**, **data-free generation**, and **cooperative learning**.  
 - ML teams working with **sensitive datasets**, who need synthetic data without exposing real samples to generative models.  
